@@ -1,32 +1,41 @@
 <!doctype html>
 <head lang="en">
-
 	<meta>
+	<title>link#STUBBER</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
-
 	<!-- jQuery since bootstrap has a dependency -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-
 	<!-- Link Stubber javascript -->
 	<script src="linkstubber.js"></script>
-
+	<style type="text/css">
+		body { background: #ccc; }
+		.main-stage {
+			background: rgba(255, 255, 255, 0.3);
+			border-radius: 15px;
+			height: 150px;
+			margin-top: 200px;
+			padding: 20px 50px 0 50px;
+			width: 550px;
+		}
+	</style>
 </head>
 
 <body>
-
-	<!-- THIS IS A BROKEN LINK -->
-	<a class="ls-outside-link btn btn-primary" href="http://www.google.com">Working link to Google homepage</a>
-
-	<br clear="all" />
-
-	<!-- THIS IS NOT A BROKEN LINK -->
-	<a class="ls-outside-link btn btn-primary" href="http://asdfasafsafdasdfasdfasfasfasdfasfdaf.com">Hopefully broken link</a>
-
+	<div class="container main-stage">
+		<div class="row">
+			<div class="span6">
+				<h3 class="text-center">link#STUBBER in action:</h3>
+				<!-- THIS IS NOT A BROKEN LINK -->
+				<a class="ls-outside-link btn btn-primary pull-right" href="http://asdfasafsafdasdfasdfasfasfasdfasfdaf.com">Hopefully broken link</a>
+				<!-- THIS IS A BROKEN LINK -->
+				<a class="ls-outside-link btn btn-primary" href="http://www.google.com">Working link to Google homepage</a>
+				<br clear="all" />
+			</div>
+		</div>
+	</div>
 </body>
