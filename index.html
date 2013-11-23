@@ -1,17 +1,32 @@
-<head>
+<!doctype html>
+<head lang="en">
 
+	<meta>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+
+	<!-- jQuery since bootstrap has a dependency -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	<!-- Link Stubber javascript -->
+	<script src="linkstubber.js"></script>
 
 </head>
 
 <body>
 
+	<!-- THIS IS A BROKEN LINK -->
+	<a class="ls-outside-link btn btn-primary" href="http://www.google.com">Working link to Google homepage</a>
+
+	<br clear="all" />
+
+	<!-- THIS IS NOT A BROKEN LINK -->
+	<a class="ls-outside-link btn btn-primary" href="http://asdfasafsafdasdfasdfasfasfasdfasfdaf.com">Hopefully broken link</a>
 
 </body>
