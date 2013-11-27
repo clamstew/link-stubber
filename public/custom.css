@@ -1,0 +1,12 @@
+body { background: #ccc; }
+
+.main-stage {
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 15px;
+	height: 150px;
+	margin-top: 40px;
+	padding: 20px 50px 0 50px;
+	width: 550px;
+	box-sizing: border-box;
+}
