@@ -56,6 +56,11 @@
 
 	<script type="text/javascript" src="http://www.ajax-cross-domain.com/cgi-bin/ACD/ACD.js?uri=(http://www.google.com/)"></script>
 	<script type="text/javascript">
-	 alert(ACD.status);
+		var siteStatus = ACD.status;
+		if (siteStatus === "200 OK") {
+			console.log("This site exists");
+		} else {
+			console.log("This thing AINT here!");
+		}
 	</script>
 </body>
