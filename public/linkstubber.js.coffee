@@ -34,3 +34,4 @@ makeAjaxCallOnLinkURL = () ->
 
 
 findLinks()
+
